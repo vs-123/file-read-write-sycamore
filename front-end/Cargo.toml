@@ -1,0 +1,17 @@
+[package]
+name = "front-end"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+web-sys = {version="0.3.56", features=["KeyboardEvent"]}
+console_error_panic_hook = "0.1.7"
+console_log = "0.2.0"
+log = "0.4.14"
+reqwasm = "0.4.0"
+serde = "1.0.136"
+sycamore = { git = "https://github.com/sycamore-rs/sycamore", features = ["suspense"] }
